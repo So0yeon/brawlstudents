@@ -48,7 +48,6 @@ const PROBLEM_PACK = {
     { difficulty: 'easy', topic: '분수↔소수', hint: '1/2 = 1 ÷ 2를 계산해보세요.', text: '1/2를 소수로 나타내면?', answer: '0.5' },
     { difficulty: 'easy', topic: '분수↔소수', hint: '1/10 = 0.1이에요. 분모가 10이면 소수 첫째 자리예요.', text: '3/10을 소수로 나타내면?', answer: '0.3' },
     { difficulty: 'easy', topic: '분수↔소수', hint: '7/10 = 7 ÷ 10이에요.', text: '7/10을 소수로 나타내면?', answer: '0.7' },
-    { difficulty: 'easy', topic: '분수↔소수', hint: '0.5 = 5/10 = 1/2예요.', text: '0.5와 1/2 중 더 큰 것은?', answer: '같다', choices: ['0.5', '1/2', '같다'] },
     { difficulty: 'easy', topic: '분수↔소수', hint: '1/2 = 0.5예요. 0.3과 비교해보세요.', text: '1/2과 0.3 중 더 큰 것은?', answer: '1/2', choices: ['1/2', '0.3'] },
 
 
@@ -110,7 +109,6 @@ const PROBLEM_PACK = {
     { difficulty: 'normal', topic: '분수↔소수', hint: '3/4 = 3 ÷ 4를 계산해보세요.', text: '3/4를 소수로 나타내면?', answer: '0.75' },
     { difficulty: 'normal', topic: '분수↔소수', hint: '1/5 = 1 ÷ 5를 계산해보세요.', text: '1/5를 소수로 나타내면?', answer: '0.2' },
     { difficulty: 'normal', topic: '분수↔소수', hint: '3/5 = 3 ÷ 5를 계산해보세요.', text: '3/5를 소수로 나타내면?', answer: '0.6' },
-    { difficulty: 'normal', topic: '분수↔소수', hint: '3/5 = 0.6이에요. 0.6과 비교해보세요.', text: '3/5과 0.6 중 더 큰 것은?', answer: '같다', choices: ['3/5', '0.6', '같다'] },
     { difficulty: 'normal', topic: '분수↔소수', hint: '3/4 = 0.75예요. 0.8과 비교해보세요.', text: '3/4과 0.8 중 더 큰 것은?', answer: '0.8', choices: ['3/4', '0.8'] },
     { difficulty: 'normal', topic: '분수↔소수', hint: '4/5 = 0.8이에요. 0.75와 비교해보세요.', text: '4/5과 0.75 중 더 큰 것은?', answer: '4/5', choices: ['4/5', '0.75'] },
     { difficulty: 'normal', topic: '분수↔소수', hint: '1/2 = 0.5예요. 0.4와 비교해보세요.', text: '1/2과 0.4 중 더 큰 것은?', answer: '1/2', choices: ['1/2', '0.4'] },
