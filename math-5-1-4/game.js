@@ -51,9 +51,9 @@ const CHARACTERS = [
 ];
 
 const DIFFICULTIES = [
-  { id: 'easy',   name: '이지 - 새내기',   icon: '🥉', color: '#3ddc84' },
-  { id: 'normal', name: '노멀 - 베테랑',   icon: '🥈', color: '#00d4ff' },
-  { id: 'hard',   name: '하드 - 챔피언',   icon: '🥇', color: '#ff3d8b' },
+  { id: 'easy',   name: '브론즈 - 새내기 브롤러',   icon: '🥉', color: '#3ddc84' },
+  { id: 'normal', name: '실버 - 베테랑 브롤러',   icon: '🥈', color: '#00d4ff' },
+  { id: 'hard',   name: '골드 - 챔피언 브롤러',   icon: '🥇', color: '#ff3d8b' },
 ];
 
 let gameState = {
