@@ -1,5 +1,5 @@
 const PROBLEM_PACK = {
-  name: '자연수의 곱셈',
+  name: '곱셈',
   emoji: '✖️',
   description: '(몇십)×(몇), (몇십몇)×(몇) 곱셈',
   enemies: [
