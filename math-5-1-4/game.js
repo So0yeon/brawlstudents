@@ -253,29 +253,30 @@ function handleCharacterClick(card) {
     return;
   }
 
-  const charId = card.dataset.id;
-  const char = CHARACTERS.find(c => c.id === charId);
+  const char = CHARACTERS.find(c => c.id === card.dataset.id);
 
   if (gameState.mode === 'adventure') {
     document.querySelectorAll('.character-card').forEach(c => c.classList.remove('selected-p1'));
     card.classList.add('selected-p1');
     gameState.p1Character = char;
   } else {
-    const p1Id = gameState.p1Character ? gameState.p1Character.id : null;
-    const p2Id = gameState.p2Character ? gameState.p2Character.id : null;
-
-    if (charId === p1Id) {
-      card.classList.remove('selected-p1');
-      gameState.p1Character = null;
-    } else if (charId === p2Id) {
-      card.classList.remove('selected-p2');
-      gameState.p2Character = null;
-    } else if (!gameState.p1Character) {
+    // PvP: p1 미선택이면 p1 지정, p1 선택됐으면 p2 지정
+    // 카드 클릭 순서 기반 (같은 브롤러도 허용)
+    if (!gameState.p1Character) {
       card.classList.add('selected-p1');
       gameState.p1Character = char;
     } else if (!gameState.p2Character) {
       card.classList.add('selected-p2');
       gameState.p2Character = char;
+    } else {
+      // 둘 다 선택된 상태 → 초기화 후 p1 재선택
+      document.querySelectorAll('.character-card').forEach(c => {
+        c.classList.remove('selected-p1', 'selected-p2');
+      });
+      gameState.p1Character = null;
+      gameState.p2Character = null;
+      card.classList.add('selected-p1');
+      gameState.p1Character = char;
     }
   }
 
