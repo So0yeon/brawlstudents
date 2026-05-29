@@ -481,7 +481,8 @@ function stopTimer() {
 
 // ========== 정답 처리 (공통) ==========
 function checkAnswer() {
-  if (!gameState.currentQuestion) return;
+  if (!gameState.currentQuestion) return;         // ← 추가
+  gameState.currentQuestion = null;               // ← 추가
   const input = document.getElementById('answerInput').value.trim();
   if (!input) { showFeedback('답을 선택하거나 입력해주세요!', 'wrong'); return; }
 
