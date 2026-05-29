@@ -166,7 +166,6 @@ function renderAnswerUI(question) {
       btn.textContent = ch;
       btn.addEventListener('click', () => {
         document.getElementById('answerInput').value = ch;
-        if (!gameState.currentQuestion) return;
         checkAnswer();
       });
       wrap.appendChild(btn);
