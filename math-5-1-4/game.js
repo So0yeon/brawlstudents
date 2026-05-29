@@ -166,6 +166,7 @@ function renderAnswerUI(question) {
       btn.textContent = ch;
       btn.addEventListener('click', () => {
         document.getElementById('answerInput').value = ch;
+        if (!gameState.currentQuestion) return;
         checkAnswer();
       });
       wrap.appendChild(btn);
@@ -480,6 +481,7 @@ function stopTimer() {
 
 // ========== 정답 처리 (공통) ==========
 function checkAnswer() {
+  if (!gameState.currentQuestion) return;
   const input = document.getElementById('answerInput').value.trim();
   if (!input) { showFeedback('답을 선택하거나 입력해주세요!', 'wrong'); return; }
 
