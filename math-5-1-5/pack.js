@@ -86,7 +86,7 @@ const PROBLEM_PACK = {
     // 고난도 연산
     { difficulty: 'hard', topic: '진분수 덧셈', hint: '분모 8과 6의 최소공배수는 24예요. 각각 분모 24로 통분해보세요.', text: '5/8 + 1/6 = ?', answer: '19/24' },
     { difficulty: 'hard', topic: '진분수 덧셈', hint: '분모 9와 6의 최소공배수는 18이에요. 각각 분모 18로 통분해보세요.', text: '5/9 + 1/6 = ?', answer: '13/18' },
-    { difficulty: 'hard', topic: '진분수 뺄셈', hint: '분모 9와 6의 최소공배수는 18이에요. 각각 분모 18로 통분해보세요.', text: '7/9 - 5/6 = ?', answer: '1/18' },
+    { difficulty: 'hard', topic: '진분수 뺄셈', hint: '분모 9와 6의 최소공배수는 18이에요. 각각 분모 18로 통분해보세요.', text: '5/6 - 7/9 = ?', answer: '1/18' },
     { difficulty: 'hard', topic: '진분수 뺄셈', hint: '분모 8과 6의 최소공배수는 24예요. 각각 분모 24로 통분해보세요.', text: '7/8 - 5/6 = ?', answer: '1/24' },
 
     // 대분수 고난도
